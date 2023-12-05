@@ -70,6 +70,9 @@ public class PlayerController : MonoBehaviour
         //사망 상태를 true로 변경
         isDead = true;
 
+        //GameManager의 게임오버 처리 실행
+        GameManager.instance.OnPlayerDead();
+
     }
 
     // 트리거 콜라이더를 가진 장애물과의 충돌을 감지
